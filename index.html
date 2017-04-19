@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="ethereum-dapp-url-bar-style" content="transparent">
+
+  <title>Eth Log</title>
+
+  <link rel='stylesheet' href='./style.css' type='text/css'>
+  <script src="./scripts.js"></script>
+</head>
+<body>
+
+  <div class="content">
+    <h1 class="title">Eth Log</h1>
+
+    <div id="logEntry"></div>
+
+    <button id="like">Like</button>
+    <button id="dislike">Dislike</button>
+
+    <div id="results"></div>
+
+    <div class="newEntry">
+    </div>
+
+  </div>
+
+
+  <!-- <script src="https://raw.githubusercontent.com/ethereum/web3.js/0.16.0/dist/web3.min.js"></script> -->
+  <script type="text/javascript">
+
+   function autorun(){
+      init();
+   }
+
+   if (document.addEventListener) {
+     document.addEventListener("DOMContentLoaded", autorun, false);
+   } else if (document.attachEvent) {
+     document.attachEvent("onreadystatechange", autorun);
+   } else {
+     window.onload = autorun;
+   }
+  </script>
+</body>
+</html>
